@@ -1,0 +1,13 @@
+# Mark generated/vendor UI components so they don't dominate language stats
+src/components/ui/** linguist-vendored
+
+# Treat built assets as vendored if any appear
+dist/** linguist-vendored
+
+# Ensure configuration files are recognized but low impact
+*.css linguist-detectable=true
+*.ts linguist-detectable=true
+*.tsx linguist-detectable=true
+*.json linguist-detectable=true
+*.md linguist-detectable=true
+
